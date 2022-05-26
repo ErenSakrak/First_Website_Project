@@ -1,0 +1,43 @@
+<div class="ustnavbar">
+  <header>
+    <nav class="navbar">
+      <a href="/" class="navbarlogosu"><img src="../Resimler/LogoWithWebsitename.png" alt=""></a>
+      <ul class="navbarmenusu">
+        <li class="navbaricindekiler">
+          <a href="/" class='navlink1'>Anasayfa</a>
+        </li>
+        {{#if displayLink}}
+        <li class="navbaricindekiler">
+          <a href="/Inceleme.html" class="navlink3">İnceleme</a>
+        </li>
+        {{/if}}
+
+        <li class="navbaricindekiler">
+          <a href="/Hakkimizda.html" class="navlink4">Hakkımızda</a>
+        </li>
+        <li class="navbaricindekiler">
+          <a href="/Iletisim.html" class="navlink2">İletişim</a>
+        </li>
+
+        {{#unless displayLink}}
+        <li class="navbaricindekiler">
+          <a href="/users/login" class="navlink5">Giriş Yap / Kayıt Ol</a>
+        </li>
+        {{/unless}}
+        {{#if displayLink}}
+        <li class="navbaricindekiler">
+          <a href="/users/logout" class="navlink5">Çıkış Yap</a>
+        </li>
+        {{/if}}
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        
+      </div>
+      
+    </nav>
+  </header>
+</div>

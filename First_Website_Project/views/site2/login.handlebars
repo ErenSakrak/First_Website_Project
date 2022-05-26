@@ -1,0 +1,36 @@
+<hr class="usthr">
+
+<script src="../Script/Anasayfa.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/Login.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	<div class="logindivi">
+    
+    <div class="main1">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form action="/users/signup" method="POST">
+					<label for="chk" aria-hidden="true">KAYIT OL</label>
+					{{#if sessionFlash.message}}
+            <div style="background-color:rgba(4, 0, 255, 0.171);border-radius: 5px;display: inline-table;height: 2vw;align-items: center;font-family: Fredoka;color: white;padding-top: 1vw;padding-bottom: 1vw;" class="{{sessionFlash.type}}">
+                {{sessionFlash.message}}
+            </div>
+            {{/if}}
+			
+					<input type="email" name="mail" placeholder="Email" required="">
+					<input type="password" name="sifre" placeholder="Şifre" required="">
+					<button>Kaydet</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="/users/login" method="POST">
+					<label for="chk" aria-hidden="true">Giriş Yap</label>
+					<input type="email" name="mail" placeholder="Email" required="">
+					<input type="password" name="sifre" placeholder="Şifre" required="">
+					<button>Giriş</button>
+				</form>
+			</div>
+	</div>
+
+    </div>

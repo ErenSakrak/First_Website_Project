@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeknoCihaz - Son çıkan teknolojik cihazlar Haber-Tanıtım WebSitesi</title>
+    <link rel="stylesheet" href="/css/Inceleme.css">
+    <link rel="icon" type="" href="../Resimler/data-management.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <script src="../amazing2/sliderengine/jquery.js"></script>
+    <script src="../amazing2/sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="../amazing2/sliderengine/amazingslider-1.css">
+    <script src="../amazing2/sliderengine/initslider-1.js"></script>
+</head>
+
+
+<hr class="usthr">
+<marquee style="background-color: rgba(0, 195, 255, 0.356);font-family:'Fredoka', sans-serif;">SON TEKNOLOJİK CİHAZLARIN
+    HABER-TANITIM WEBSİTESİ</marquee>
+
+<script src="../Script/Anasayfa.js"></script>
+
+
+<body>
+    <div class="konteynir">
+        <h1 class="trendhaberbasligi">Fiyatını gören ekranı kapatıyor: Huawei P50 Pocket Türkiye'de satışa çıktı.
+            Shiftdelete Tarafından inceleme..</h1>
+        <br><br>
+        <iframe style="border-radius: 25px;float: left;clear: both;left: 75px;position: relative;display: block;"
+            width="800" height="500" src="https://www.youtube.com/embed/_Vpw1pOAYGY" frameborder="0"
+            allow="accelerometer; autoplapost1y; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    <div class="yorumyapma">
+        {{#if sessionFlash.message}}
+            <div style="background-color:rgba(4, 0, 255, 0.171);border-radius: 5px;display: inline-table;height: 2vw;align-items: center;font-family: Fredoka;color: white;padding-top: 1vw;padding-bottom: 1vw;" class="{{sessionFlash.type}}">
+                {{sessionFlash.message}}
+            </div>
+            {{/if}}
+            <h4 class="teknocihazyorum">Üye Yorumları</h4>
+
+            {{#each posts}}
+            <div class="comment"> <a href="#"><img style="max-width: 5vw;"
+                        src="https://img.icons8.com/bubbles/100/000000/lock-male-user.png"
+                        class="align-self-center mr-1"></a>
+                <div class="media-body">
+                    <p class="reply">{{yorumyeri}}</p>
+                </div>
+            </div>
+
+            {{/each}}
+
+
+
+            <form class="yorumyapmayeri" action="/posts/test" method="POST">
+                <textarea name="yorumyeri" class="comment1" placeholder="Yorumunuzu Yazın..."></textarea>
+                <br>
+                <input style="width: 24vw;cursor: pointer;position: relative;left: 2px;height:2vw;" type="submit"
+                    name="submit" value="Yorum Yap">
+            </form>
+        </div>
+
+
+    </div>
+    <div class="Trendhaberlerkutusu">
+        <h1 class="trendhaberbasligi" style="font-size: 1.9vw;">TREND HABERLER</h1>
+
+        <div class="trendhaber1">
+            <a href="Trendhaberler.html">
+                <img src="../Resimler/TrendHaber/Huawei-P50-Pocket.jpg" alt="Snow" style="width:100%;">
+                <div class="trendsolaltyazi1">
+                    <p class="trendsolaltyazi2underline">Huawei P50 Pocket Türkiye’de satışa sunuldu</p>
+                </div>
+            </a>
+        </div>
+        <br><br>
+        <div class="trendhaber2">
+            <a href="Trendhaberler2.html">
+                <img src="../Resimler/TrendHaber/Macbook-M1-max.jpg" alt="Snow" style="width:100%;">
+                <div class="trendsolaltyazi2">
+                    <p class="trendsolaltyazi2underline">M1 işlemcili 13 inç Macbook Pro incelemesi</p>
+                </div>
+            </a>
+        </div>
+        <br><br><br>
+        <div class="trendhaber3">
+            <a href="Trendhaberler3.html">
+                <img src="../Resimler/TrendHaber/Lenovo-Yogo-Smart.jpg" alt="Snow" style="width:100%;">
+                <div class="trendsolaltyazi3">
+                    <p class="trendsolaltyazi2underline">Bu fırsatı sakın kaçırmayın! Lenovo Yoga Smart Tab'e 1300 TL
+                        indirim!</p>
+                </div>
+            </a>
+        </div>
+        <br><br><br>
+        <div class="trendhaber4">
+            <a href="Trendhaberler4.html">
+                <img src="../Resimler/TrendHaber/huawei-p50-pro.jpg" alt="Snow" style="width:100%;">
+                <div class="trendsolaltyazi4">
+                    <p class="trendsolaltyazi2underline">HUAWEI P50 Pro Türkiye'de Satışa Sunuldu! İşte Özellikleri!</p>
+                </div>
+            </a>
+        </div>
+        <br><br><br>
+        <div class="trendhaber5">
+            <a href="Trendhaberler5.html">
+                <img src="../Resimler/TrendHaber/monster.png" alt="Snow" style="width:100%;">
+                <div class="trendsolaltyazi5">
+                    <p class="trendsolaltyazi2underline">Monster Abra A7 V13.2.7 Tasarımı Nasıl?</p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

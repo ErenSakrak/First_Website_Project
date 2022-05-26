@@ -1,0 +1,124 @@
+.main1{
+	width: auto;
+	height: 500px;
+	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	overflow: hidden;
+	box-shadow: 5px 20px 50px #000;
+	position: relative;
+	
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 30px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+.logindivi{
+	text-align: center;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+  }
+  
+  .bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #ffffff;
+  }
+  
+@media (max-width: 1075px) {
+	.hamburger {
+	  z-index: 1;
+	  position: fixed;
+	  display: block;
+	}
+  
+	.hamburger.active .bar:nth-child(2) {
+	  opacity: 0;
+	}
+  
+	.hamburger.active .bar:nth-child(1) {
+	  transform: translateY(8px) rotate(45deg);
+	}
+  
+	.hamburger.active .bar:nth-child(2) {
+	  transform: translateY(8px) rotate(45deg);
+	}
+  
+	.hamburger.active {
+	  z-index: 1;
+	  position: fixed;
+	}
+}

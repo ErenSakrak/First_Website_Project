@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/Iletisim.css">
+
+<div class="container">
+	<div class="row">
+		<br>
+			<h1>Bizimle İletişime Geçin</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center"></h4>
+	</div>
+	<form action="/contacts/test" method="POST">
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="isim"  required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="email" name="mailadresi" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" name="telefon" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea style="max-width: 43vw; max-height: 35vw;" name="mesaj" required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<button class="btn-lrg submit-btn">Mesaj Gönder</button>
+			</div>
+			
+	</div>
+	</form>
+	
+</div>
